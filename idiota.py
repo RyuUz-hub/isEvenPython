@@ -4,7 +4,8 @@ arqv.write('def isEven(number):\n')
 arqv.write('    if number == 0: return True\n')
 arqv.close()
 arqv = open('utils.py', 'a', encoding='utf-8')
-while num <= 1000000:
+need = int(input('How many numbers will you need: '))
+while num <= need:
     arqv.write(f'    elif number == {num}: return {num % 2 == 0}\n')
     num += 1
 
